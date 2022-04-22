@@ -1,0 +1,23 @@
+.header-container {
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+span {
+  color: #e064cc;
+}
+
+h2 {
+  height: 20px;
+  margin: 0 40px;
+  width: 30%;
+}
+
+button {
+  height: 20px;
+  background-color: #5b6166;
+  font-family: Nunito;
+}

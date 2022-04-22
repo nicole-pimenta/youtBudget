@@ -1,3 +1,5 @@
-export const Card = () => {
+const Card = () => {
   return <div>Card</div>;
 };
+
+export default Card;

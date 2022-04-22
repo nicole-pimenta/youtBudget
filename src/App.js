@@ -1,10 +1,18 @@
-import logo from "./logo.svg";
+import Header from "./components/Header";
+import Form from "./components/Form";
+
+import List from "./components/List";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+      <div className="main-container">
+        <Form />
+
+        <List />
+      </div>
     </div>
   );
 }
