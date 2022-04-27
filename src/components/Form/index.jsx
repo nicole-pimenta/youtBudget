@@ -1,6 +1,6 @@
 import "../Form/style.css";
 
-const Form = () => {
+const Form = ({ listTransactions, setListTransactions }) => {
   return (
     <div className="container-form">
       <form action="">
@@ -10,6 +10,7 @@ const Form = () => {
           type="text"
           placeholder="Digite aqui sua descrição"
         />
+
         <span> ex:Compra de roupas</span>
 
         <div className="container-value">
@@ -20,11 +21,14 @@ const Form = () => {
 
           <div>
             <label> Tipo de Valor</label>
-            <input type="text" placeholder="Entrada" />
+            <select name="tipo_valor">
+              <option value="entrada">Entrada</option>
+              <option value="saida"> Saida</option>
+            </select>
           </div>
         </div>
 
-        <button>Inserir Valor</button>
+        <button type="submit">Inserir Valor</button>
       </form>
     </div>
   );

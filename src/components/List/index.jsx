@@ -1,5 +1,23 @@
-const List = () => {
-  return <div>List</div>;
+import Card from "../Card";
+
+const List = ({ listTransactions }) => {
+  return (
+    <>
+      <ul>
+        {listTransactions.map((item, index) => {
+          return (
+            <li key={index}>
+              <Card
+                description={item.description}
+                type={item.type}
+                value={item.value}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </>
+  );
 };
 
 export default List;
