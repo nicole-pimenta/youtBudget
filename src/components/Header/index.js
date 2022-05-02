@@ -1,10 +1,13 @@
-import "../Header/style.css";
+import "./style.css";
 const Header = () => {
   return (
     <div className="header-container">
-      <h2>
-        <span>your</span>Budget
-      </h2>
+      <div className="logo">
+        <h2>
+          <span>Your</span>Budget
+        </h2>
+      </div>
+
       <button>Inicio</button>
     </div>
   );

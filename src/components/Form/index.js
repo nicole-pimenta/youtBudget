@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Form/style.css";
+import "./style.css";
 
 const Form = ({ listTransactions, setListTransactions }) => {
   const [userDescription, setUserDescription] = useState("");
@@ -12,39 +12,41 @@ const Form = ({ listTransactions, setListTransactions }) => {
       ...listTransactions,
       { description: userDescription, type: userType, value: userValue },
     ]);
+
+    setUserDescription("");
+    setUserType("");
+    setUserValue("");
   };
 
   return (
     <div className="container-form">
       <form>
-        <label>Descricao</label>
+        <label>Descrição</label>
         <input
           className="main-input"
           type="text"
-          placeholder="Digite aqui sua descrição"
+          placeholder="ex: Compra de roupas"
           value={userDescription}
           onChange={(e) => setUserDescription(e.target.value)}
         />
-
-        <span> ex:Compra de roupas</span>
 
         <div className="container-value">
           <div>
             <label>Valor</label>
             <input
               type="text"
-              placeholder="Valor"
+              placeholder=" R$ 0.00"
               value={userValue}
               onChange={(e) => setUserValue(e.target.value)}
             />
           </div>
 
-          <div>
+          <div className="select">
             <label> Tipo de Valor</label>
             <select
               name="tipo_valor"
               value={userType}
-              onChange={(e) => console.log(e.target.value)}
+              onChange={(e) => setUserType(e.target.value)}
             >
               <option value="-">-</option>
               <option value="entrada">Entrada</option>

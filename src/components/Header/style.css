@@ -1,23 +1,42 @@
 .header-container {
   height: 88px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid gray;
+  box-shadow: 10px 5px 5px gray;
 }
 
-span {
-  color: #e064cc;
+.logo {
+  width: 30%;
+}
+
+.logo span {
+  color: #fd377e;
+  font-size: medium;
+  font-weight: 600;
+  height: 20px;
+  width: 70px;
 }
 
 h2 {
   height: 20px;
-  margin: 0 40px;
-  width: 30%;
+  margin: 0 0px;
+  width: 13px;
 }
 
-button {
-  height: 20px;
+.header-container button {
+  width: 84px;
+  height: 40px;
+  border-radius: 8px;
+  gap: 10px;
   background-color: #5b6166;
   font-family: Nunito;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header-container button:hover {
+  background-color: #fd377e;
 }

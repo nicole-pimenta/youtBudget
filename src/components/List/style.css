@@ -1,0 +1,22 @@
+.description-list {
+  height: 351px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  flex-direction: column;
+  background-color: beige;
+  box-sizing: border-box;
+}
+
+.description-list li {
+  list-style: none;
+  background-color: #ffffff;
+  margin: 5px auto;
+  width: 90%;
+}
+
+p {
+  text-align: center;
+}
