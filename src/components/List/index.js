@@ -1,6 +1,7 @@
 import Card from "../Card";
 
 const List = ({ listTransactions }) => {
+  console.log(listTransactions)
   return (
     <>
       <ul>
