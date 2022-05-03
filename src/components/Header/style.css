@@ -7,7 +7,7 @@
 }
 
 .logo {
-  width: 30%;
+  width: 45%;
 }
 
 .logo span {
@@ -20,7 +20,7 @@
 
 h2 {
   height: 20px;
-  margin: 0 0px;
+  margin: 0 auto;
   width: 13px;
 }
 
@@ -29,9 +29,9 @@ h2 {
   height: 40px;
   border-radius: 8px;
   gap: 10px;
-  background-color: #5b6166;
+  background-color: antiquewhite;
   font-family: Nunito;
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -39,4 +39,6 @@ h2 {
 
 .header-container button:hover {
   background-color: #fd377e;
+  font-size: 18px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

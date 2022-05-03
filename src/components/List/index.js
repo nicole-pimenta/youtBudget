@@ -4,6 +4,16 @@ import "./style.css";
 const List = ({ listTransactions }) => {
   return (
     <div className="container-form">
+      <div className="container-filter">
+        <p>Resumo Financeiro</p>
+
+        <div className="container-btn">
+          <button className="btn-padrao">Todos</button>
+          <button className="btn-padrao"> Entradas</button>
+          <button className="btn-padrao">Despesas</button>
+        </div>
+      </div>
+
       {listTransactions.length === 0 ? (
         <div className="description-list">
           <p>Você ainda não possui nenhum lançamento</p>

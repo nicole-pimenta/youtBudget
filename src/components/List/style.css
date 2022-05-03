@@ -1,3 +1,23 @@
+.container-filter,
+.container-btn {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.container-btn {
+  width: 300px;
+}
+.container-filter p {
+  width: 140px;
+}
+
+.btn-padrao {
+  background-color: antiquewhite;
+  width: 80px;
+  cursor: pointer;
+  
+}
 .description-list {
   height: 351px;
   width: 95%;
